@@ -1,0 +1,27 @@
+#include<stdio.h>
+main()
+{
+	int a[30],n,i,f,s;
+	printf("Enter the size of an array :- \n");
+	scanf("%d",&n);
+	printf("Enter elements into the array :- \n");
+	for(i=0;i<n;i++)
+	{
+			scanf("%d",&a[i]);
+	}
+	f=s;
+	for(i=0;i<n;i++)
+	{
+		if(a[i]>f)
+		{
+		s=f;
+		f=a[i];
+	    }  
+	}
+   if(a[i]>s && a[i]<f)
+	{
+		s=a[i];
+	}
+	printf("First  Largest  = %d\n",f);
+	printf("Second Largest  = %d", s);
+}
