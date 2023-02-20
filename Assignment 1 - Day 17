@@ -1,0 +1,17 @@
+#include<stdio.h>
+main()
+{
+	int n,i,num,temp;
+	printf("How many numbers you want to enter :-\n");
+	scanf("%d",&n);
+	printf("Enter %d numbers :-\n",n);
+	scanf("%d",&num);
+	temp=num;
+	for(i=2;i<=n;i++)
+	{
+		scanf("%d",&num);
+	    if(num<temp)
+		temp=num;
+	}
+	printf("Smallest Number is :- %d",temp);
+}
