@@ -1,23 +1,7 @@
 #include<stdio.h>
 main()
 {
-	int n,i=1,c=0;
-	printf("enter the value of n\n");
-	scanf("%d",&n);
-	while(i<=n)
-	{
-			
-		
-		if(n%i==0)
-		{
-			
-		printf("%d\t",i);
-	    c++;
-		
-		}
-		i++;
-	
-    }
-        printf("=%d\t",c);
-  
+	int i,j,k,l;
+	for(i=1,j=3,k=5,l=7;i<=9&&j<=11&&k<=13&&l<=15;i=i+4,j=j+4,k=k+4,l=l+4)
+	printf("%d\t%d\t%d\t%d\n",i,j,k,l);
 }
