@@ -1,0 +1,12 @@
+#include<stdio.h>
+main()
+{
+	int i,n,k;
+	scanf("%d",&n);
+	for(i=1,k=n;i<=n&&k>=1;i++,k--)
+	{
+		printf("%d",i);
+		printf("\t%d\n",k);
+	}
+
+}
