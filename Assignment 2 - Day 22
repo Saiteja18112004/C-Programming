@@ -1,0 +1,25 @@
+#include<stdio.h>
+main()
+{
+	int n,i,r,sum=0,k,l=0,j,m;
+	scanf("%d",&n);
+	while(n>0)
+	{	
+		 	r=n%10;
+			sum=sum+r;
+			n=n/10;
+    }
+	while(sum>0)
+	{
+		 	k=sum%10;
+			l=l+k;
+			sum=sum/10; 
+    }
+    while(l>0)
+	{
+		 	m=l%10;
+			j=j+m;
+			l=l/10; 
+    }
+    printf("%d",j);	
+}
