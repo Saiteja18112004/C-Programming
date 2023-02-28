@@ -1,0 +1,21 @@
+#include<stdio.h>
+main()
+{
+	int a,e,r,i,n,s,temp;
+	scanf("%d %d",&a,&e);
+	for(n=a;n<=e;n++)
+	{
+	temp=n;
+	s=0;
+	while(temp!=0)
+  {
+	r=temp%10;
+	temp=temp/10;
+	s=s+(r*r*r);
+	
+  }
+  if (s==n)
+  printf("%d\n",n);
+  
+   }
+}
