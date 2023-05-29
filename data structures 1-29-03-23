@@ -1,0 +1,26 @@
+#include<stdio.h>
+#define SIZE 50
+main()
+/*{
+0	int arr[]={1,2,3,4,5,6};  // 5 * 4 = 20 bytes
+	int len=sizeof(arr)/sizeof(int);
+	int i,pos;
+	
+	
+	int x=sizeof(arr);
+	int y=x/sizeof(int);
+	printf("\n\n%d  %d\n\n",x,y);
+	//printf("\n\nlen %d\n\n",len);
+	scanf("%d",&pos); // 0-4
+	if(pos>=0&&pos<len)
+	{
+		for(i=pos;i<len-1;i++)
+			arr[i]=arr[i+1];
+		len--;
+		
+		for(i=0;i<len;i++)
+			printf("%d ",arr[i]);
+	}
+	else
+		printf("\nInput outof bounds..!!");
+}
